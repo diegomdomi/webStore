@@ -25,7 +25,7 @@ function AppAxios (){
     return(
         <>
         <Context.Provider value={{users:users,addUsers:addUsers}}>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <NavBarStore/>
             <Switch>
                 <Route exact path="/" component={LoginStore} />   
