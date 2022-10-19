@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/diegomdomi/webStore.git/static/css/main.d827c9f5.css",
+    "main.js": "/diegomdomi/webStore.git/static/js/main.d7dc4f21.js",
+    "static/js/787.8b33a784.chunk.js": "/diegomdomi/webStore.git/static/js/787.8b33a784.chunk.js",
+    "index.html": "/diegomdomi/webStore.git/index.html",
+    "main.d827c9f5.css.map": "/diegomdomi/webStore.git/static/css/main.d827c9f5.css.map",
+    "main.d7dc4f21.js.map": "/diegomdomi/webStore.git/static/js/main.d7dc4f21.js.map",
+    "787.8b33a784.chunk.js.map": "/diegomdomi/webStore.git/static/js/787.8b33a784.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d827c9f5.css",
+    "static/js/main.d7dc4f21.js"
+  ]
+}
