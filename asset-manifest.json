@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/diegomdomi/webStore.git/static/css/main.d827c9f5.css",
-    "main.js": "/diegomdomi/webStore.git/static/js/main.0c02b153.js",
-    "static/js/787.8b33a784.chunk.js": "/diegomdomi/webStore.git/static/js/787.8b33a784.chunk.js",
-    "index.html": "/diegomdomi/webStore.git/index.html",
-    "main.d827c9f5.css.map": "/diegomdomi/webStore.git/static/css/main.d827c9f5.css.map",
-    "main.0c02b153.js.map": "/diegomdomi/webStore.git/static/js/main.0c02b153.js.map",
-    "787.8b33a784.chunk.js.map": "/diegomdomi/webStore.git/static/js/787.8b33a784.chunk.js.map"
+    "main.css": "./static/css/main.d827c9f5.css",
+    "main.js": "./static/js/main.d24758bb.js",
+    "static/js/787.8b33a784.chunk.js": "./static/js/787.8b33a784.chunk.js",
+    "index.html": "./index.html",
+    "main.d827c9f5.css.map": "./static/css/main.d827c9f5.css.map",
+    "main.d24758bb.js.map": "./static/js/main.d24758bb.js.map",
+    "787.8b33a784.chunk.js.map": "./static/js/787.8b33a784.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d827c9f5.css",
-    "static/js/main.0c02b153.js"
+    "static/js/main.d24758bb.js"
   ]
 }
