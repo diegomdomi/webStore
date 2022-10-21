@@ -25,7 +25,7 @@ function AppAxios (){
     return(
         <>
         <Context.Provider value={{users:users,addUsers:addUsers}}>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter >
                 <NavBarStore/>
             <Switch>
                 <Route exact path="/" component={LoginStore} />   
@@ -43,7 +43,7 @@ function AppAxios (){
                 </Route>
                 <Route exact path="/product/:id" component={ProductDetail}/>
             </Switch>
-        </HashRouter>
+        </BrowserRouter>
         </Context.Provider>
         </>
     )
