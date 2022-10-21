@@ -24,7 +24,7 @@ function* loadProducts() {
 
 }
 export const getProducts = async () =>{
-    return await axios.get("https://pokeapi.co/api/v2/")
+    return await axios.get("https://fakestoreapi.com/products")
     .then(response => response.data);
 }
 
