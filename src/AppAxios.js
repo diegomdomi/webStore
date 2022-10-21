@@ -1,4 +1,4 @@
-import { BrowserRouter,Redirect,Route,Switch} from 'react-router-dom';
+import { BrowserRouter,HashRouter,Redirect,Route,Switch} from 'react-router-dom';
 import ProductDetail from "./Components/FakeStore/ProductDetail";
 import AxiosProducts from "./Components/FakeStore/AxiosProducts";
 import NavBarStore from './Components/FakeStore/NavBarStore';
@@ -25,7 +25,7 @@ function AppAxios (){
     return(
         <>
         <Context.Provider value={{users:users,addUsers:addUsers}}>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
                 <NavBarStore/>
             <Switch>
                 <Route exact path="/" component={LoginStore} />   
@@ -43,7 +43,7 @@ function AppAxios (){
                 </Route>
                 <Route exact path="/product/:id" component={ProductDetail}/>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
         </Context.Provider>
         </>
     )
