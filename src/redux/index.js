@@ -1,5 +1,5 @@
 
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga'
 import products  from './reducers/productsReducer'
 import {rootSaga} from './sagas/index'
