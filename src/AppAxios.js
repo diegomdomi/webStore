@@ -1,4 +1,4 @@
-import { BrowserRouter,HashRouter,Redirect,Route,Switch} from 'react-router-dom';
+import { BrowserRouter,Redirect,Route,Switch} from 'react-router-dom';
 import ProductDetail from "./Components/FakeStore/ProductDetail";
 import AxiosProducts from "./Components/FakeStore/AxiosProducts";
 import NavBarStore from './Components/FakeStore/NavBarStore';
