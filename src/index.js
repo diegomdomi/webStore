@@ -7,16 +7,16 @@ import { Provider } from 'react-redux'
 import createAppStore from './redux';
 
 
-// let appStore = createAppStore();
+let appStore = createAppStore();
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <Provider store={appStore} >
+  <Provider store={appStore} >
   <React.StrictMode>
     <AppAxios />
   </React.StrictMode>
-  // </Provider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

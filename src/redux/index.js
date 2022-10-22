@@ -1,5 +1,7 @@
 
 import { createStore, combineReducers, applyMiddleware, compose } from '@reduxjs/toolkit';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
 import createSagaMiddleware from 'redux-saga'
 import products  from './reducers/productsReducer'
 import {rootSaga} from './sagas/index'
@@ -15,9 +17,8 @@ export const createAppStore = () => {
   
   let miStore = createStore( 
     rootReducers, 
-    compose(
+    composeWithDevTools(
       applyMiddleware(sagaMiddleware),
-      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
       )
       );
       sagaMiddleware.run(rootSaga);
@@ -27,3 +28,14 @@ export const createAppStore = () => {
  
 export default createAppStore;
 
+
+
+// let miStore = createStore( 
+//   rootReducers, 
+//   compose(
+//     applyMiddleware(sagaMiddleware),
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//     )
+//     );
+//     sagaMiddleware.run(rootSaga);
+//   return miStore;
