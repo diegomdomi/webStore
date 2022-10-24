@@ -12,12 +12,12 @@ const ModalFunc=({changeState})=> {
   
     return (
       <div>
-        <a
+        <button
           className="waves-effect waves-teal btn-flat modal-trigger"
           data-target="modal1"
         >
          Our cookies Policy
-        </a>
+        </button>
 
         <div
         
@@ -35,13 +35,13 @@ const ModalFunc=({changeState})=> {
              or if you would like to learn more about how we use cookies, click Personalize cookies.
             </p>
           </div>
-          <div className="modal-footer" style={{backgroundColor:"#54a0f0b3"}}>
-            <a className="modal-close waves-effect waves-red btn" style={{margin:"0px",backgroundColor:"none"}}>
+          <div className="modal-footer" style={{backgroundColor:"rgb(11 43 91 / 70%)"}}>
+            <button className="modal-close waves-effect waves-red btn" style={{margin:"8px",backgroundColor:"none"}}>
               Disagree
-            </a>
-            <a onClick={changeState} className="modal-close waves-effect waves-green btn">
+            </button>
+            <button onClick={changeState} className="modal-close waves-effect waves-green btn">
               Agree
-            </a>
+            </button>
           </div>
         </div>
       </div>
