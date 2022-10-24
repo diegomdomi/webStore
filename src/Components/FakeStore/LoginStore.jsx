@@ -6,6 +6,7 @@ import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
+
 import * as M from 'materialize-css';
 import {  useHistory } from 'react-router-dom'
 
@@ -29,7 +30,6 @@ const LoginStore = () => {
     const [validacionEmail, setValidacionEmail] = useState(true)
     const [checkEmail, setCheckEmail] = useState(false)
     const [typePass, setTypePass] = useState(false)
-    const [toOpen, setToOpen] = useState(false)
 
     const handleInputChange = (e) => {
         if(e.target.name === "email"){
@@ -80,8 +80,7 @@ const LoginStore = () => {
             else{
                 setCliente(true)
                 storage.push(userLogin);
-                
-                setToOpen(true)
+                openToast()
 
             }
             
@@ -144,9 +143,9 @@ const LoginStore = () => {
       setTypePass(!typePass)
     }
 
-//    const openModal = () => {
-//         setToOpen(!toOpen)
-//    }
+   const openToast = () => {
+    M.toast({html: `user ${registroEmail} successfully logged in`,classes: 'green darken-1 rounded'})
+   }
     const enviarForm = (e) => {
         e.preventDefault();
         e.target.reset();
@@ -157,7 +156,8 @@ const LoginStore = () => {
         setregistroPassword("");
         setCliente(true)
     }
-console.log(toOpen)
+// console.log(toOpen)
+
 return(
    
     <>
@@ -237,6 +237,7 @@ return(
                             </li>
                     </ul>
                 </div>
+                {/* <LoginModal user={registroEmail} estado={toOpen}  /> */}
 
             </form>
         </div> 
