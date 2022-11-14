@@ -17,8 +17,8 @@ function AppAxios (){
             password:"",
             isLogged:false        
         }
-      ]);
-
+    ]);
+    
     let addUsers = (users) => {
         dispatch({type: LOGEDIN_STORE, payload: users});
       }

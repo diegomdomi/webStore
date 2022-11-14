@@ -156,7 +156,6 @@ const LoginStore = () => {
         setregistroPassword("");
         setCliente(true)
     }
-// console.log(toOpen)
 
 return(
    
@@ -167,8 +166,8 @@ return(
         </h4>
         <div className="loggin_page">
             <form className="col s12" onSubmit={enviarForm} >
-                <div className="row">
-                    <div className="input-field col s4">
+                <div className="row loggin_movil">
+                    <div className="input-field col s4" id="input-movil">
                         <input  id="email" name="email" type="email" className="validate" placeholder="your email..." autoComplete="off"
                             onChange={handleInputChange} 
                         />
@@ -176,7 +175,7 @@ return(
                         { email.length >= 1 && !checkEmail &&<span style={{color:"#360f0fb3", fontSize:"16px",fontWeight:"bold"}}>expected an email user!</span>}
                     </div>
 
-                    <div className="input-field col s4" style={{position:"relative"}}>
+                    <div className="input-field col s4"  id="input-movil" style={{position:"relative"}}>
                         <input  name="password" type={typePass ? "text" : "password" } className="validate" placeholder="your password..." autoComplete="off"
                         onChange={handleInputChange}
                         />
@@ -205,8 +204,8 @@ return(
         </h4>
         <div className="loggin_page">
             <form className="col s12" onSubmit={enviarForm}>
-                <div className="row">
-                    <div className="input-field col s4">
+                <div className="row loggin_movil">
+                    <div className="input-field col s4" id="input-movil">
                         <input id="nuevoEmail"  name="nuevoEmail" type="email" className="validate" placeholder="your email..." autoComplete="off"
                             onChange={handleInputChange}
                         />
@@ -215,7 +214,7 @@ return(
                         {(!checkEmail && registroPassword.length>=5) &&<h5 style={{color:"#360f0fb3", fontSize:"16px",fontWeight:"bold"}}>expected an email user! example@example.com</h5> } 
                     </div>
            
-                    <div className="input-field col s4">
+                    <div className="input-field col s4" id="input-movil">
                         <input  name="nuevoPassword"type={typePass ? "text" : "password" } className="validate" placeholder="your password..." autoComplete="off"
                             onChange={handleInputChange}
                         />
@@ -237,7 +236,6 @@ return(
                             </li>
                     </ul>
                 </div>
-                {/* <LoginModal user={registroEmail} estado={toOpen}  /> */}
 
             </form>
         </div> 
